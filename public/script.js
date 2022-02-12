@@ -7,6 +7,7 @@ const ctx = canvas.getContext("2d");
 var width = canvas.width;
 var height = canvas.height;
 var pixelArr = []
+const ghpath= '/PixelArt';
 
 const convertPixelArrTo64String = ()=>{
     const intToBin = (n)=>{
@@ -198,17 +199,17 @@ function handleFiles() {
 
 const numImages = 3;
 var currInd = Math.floor(Math.random()*numImages);
-makeImage(`/defaultImages/${currInd}.png`);
+makeImage(`${ghpath}/defaultImages/${currInd}.png`);
 
 const scrollLeft = document.getElementById("left")
 const scrollRight = document.getElementById("right")
 
 scrollLeft.onclick = ()=>{
     currInd = (currInd+numImages-1)%numImages;
-    makeImage(`/defaultImages/${currInd}.png`);
+    makeImage(`${ghpath}/defaultImages/${currInd}.png`);
 }
 
 scrollRight.onclick = ()=>{
     currInd = (currInd+1)%numImages;
-    makeImage(`/defaultImages/${currInd}.png`);
+    makeImage(`${ghpath}/defaultImages/${currInd}.png`);
 }

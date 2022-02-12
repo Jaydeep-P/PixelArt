@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Script from 'next/script'
 import styles from '../styles/Home.module.css'
 
+const ghpath= '/PixelArt';
 
 export default function Home() {
   return (
@@ -46,7 +47,7 @@ export default function Home() {
       </div>
       
 
-      <Script src="/script.js" strategy="lazyOnload"  />
+      <Script src={ghpath+"/script.js"} strategy="lazyOnload"  />
     </div>
   )
 }
