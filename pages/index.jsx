@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Pixelink</title>
-        <meta name="description" content="PixelArt in links" />
+        <title>PixelArt</title>
+        <meta name="description" content="PixelArt" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
