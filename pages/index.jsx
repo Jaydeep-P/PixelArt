@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <div className={styles.leftDiv}>
-          <h1 className={styles.text}>PixeLink</h1>
+          <h1 className={styles.text}>PixelArt</h1>
           <p className={styles.text}>Upload a picture by clicking the Upload button, this image will be converted into a 128x128 image.</p>
           <p className={styles.text}>The actual resolution of the generated image is 2048x2048</p>
           <p className={styles.text}>The image may be squished if it&apos;s aspect-ratio is not 1:1</p>
